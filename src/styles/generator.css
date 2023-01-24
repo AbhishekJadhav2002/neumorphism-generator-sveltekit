@@ -1,0 +1,207 @@
+.generator {
+  display: flex;
+  margin: 2rem auto;
+  flex-grow: 1;
+  width: 85%;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  border: 3px dotted rgb(219, 219, 219);
+  background-color: ghostwhite;
+  box-shadow: 10px 10px 32px #d9d9d9,
+  -10px -10px 32px #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  row-gap: 2rem;
+}
+
+.container:first-child {
+  border-right: 3px dashed rgba(30, 144, 255, 1);
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  height: 50px;
+}
+
+.radio-container input[type="radio"] {
+  appearance: none;
+  display: none;
+}
+
+.radio-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  border-radius: 2rem;
+  border: 2px solid rgb(229, 229, 229);
+  overflow: hidden;
+  transition: linear 0.3s;
+}
+
+.radio-container input[type="radio"]:checked + label {
+  border: 2px solid rgba(30, 144, 255, 1);
+  background-color: rgba(30, 144, 255, 0.2);
+  transition: 0.3s;
+}
+
+.card {
+  width: 70%;
+  height: 0;
+  padding-bottom: 70%;
+  border-radius: 2rem;
+  background: linear-gradient(315deg, #e6e6e6, #ffffff);
+  box-shadow: -20px -20px 60px #d9d9d9, 20px 20px 60px #ffffff;
+  /* box-shadow: inset -20px -20px 60px #d9d9d9, inset 20px 20px 60px #ffffff; */
+}
+
+hr {
+  border: 2px solid rgb(229, 229, 229);
+  width: 90%;
+}
+
+.picker {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.picker label {
+  font-size: 1.4rem;
+}
+
+.picker input[type="color"] {
+  border: none;
+  height: 100%;
+}
+
+.picker input[type="range"] {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.picker input[type="range"]:focus {
+  outline: none;
+}
+
+.picker input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.picker input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2em;
+  height: 2em;
+  margin-top: -2px;
+  background-color: rgba(30, 144, 255, 0.2);
+  border-radius: 1em;
+  border: 2px solid rgba(30, 144, 255, 1);
+  cursor: pointer;
+  transition: linear 300ms;
+}
+
+.picker input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: rgba(30, 144, 255, 1);
+}
+
+.picker input[type="range"]::-moz-range-thumb {
+  width: 2em;
+  height: 2em;
+  margin-top: -2px;
+  background-color: rgba(30, 144, 255, 0.2);
+  border-radius: 1em;
+  border: 2px solid rgba(30, 144, 255, 1);
+  cursor: pointer;
+  transition: linear 300ms;
+}
+
+.picker input[type="range"]:hover::-moz-range-thumb {
+  background-color: rgba(30, 144, 255, 1);
+}
+
+.picker input[type="range"]::-ms-thumb {
+  width: 2em;
+  height: 2em;
+  margin-top: 0;
+  background-color: rgba(30, 144, 255, 0.2);
+  border-radius: 1em;
+  border: 2px solid rgba(30, 144, 255, 1);
+  cursor: pointer;
+}
+
+.picker input[type="range"]:hover::-ms-thumb {
+  background-color: rgba(30, 144, 255, 1);
+}
+
+.picker input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  height: 1em;
+  border-bottom: 5px solid rgb(153, 204, 255);
+  background-color: transparent;
+}
+
+.picker input[type="range"]::-moz-range-track {
+  width: 100%;
+  cursor: pointer;
+  height: 1em;
+  border-bottom: 4px solid rgb(153, 204, 255);
+  background-color: transparent;
+}
+
+.picker input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.picker span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.code {
+  font-size: 1.4rem;
+  color: white;
+  background: rgb(29, 31, 33);
+  text-shadow: rgb(0 0 0 / 30%) 0px 1px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.2;
+  tab-size: 4;
+  hyphens: none;
+  padding: 1em;
+  overflow: auto;
+  direction: ltr;
+  border-radius: 0.3em;
+}
+
+.code code span {
+  color:rgba(30, 144, 255, 1);
+}
