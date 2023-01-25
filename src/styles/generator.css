@@ -2,7 +2,7 @@
   display: flex;
   margin: 2rem auto;
   flex-grow: 1;
-  width: 85%;
+  width: 75%;
   padding: 2rem 4rem;
   border-radius: 1rem;
   border: 3px dotted rgb(219, 219, 219);
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .container:first-child {
@@ -43,7 +43,7 @@
   align-items: center;
   font-size: 1.4rem;
   width: 140px;
-  height: 50px;
+  height: 40px;
   text-align: center;
   border-radius: 2rem;
   border: 2px solid rgb(229, 229, 229);
@@ -58,9 +58,9 @@
 }
 
 .card {
-  width: 70%;
+  width: 60%;
   height: 0;
-  padding-bottom: 70%;
+  padding-bottom: 60%;
   border-radius: 2rem;
   background: linear-gradient(315deg, #e6e6e6, #ffffff);
   box-shadow: -20px -20px 60px #d9d9d9, 20px 20px 60px #ffffff;
@@ -74,7 +74,7 @@ hr {
 
 .picker {
   width: 70%;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -185,7 +185,7 @@ hr {
 }
 
 .code {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
   background: rgb(29, 31, 33);
   text-shadow: rgb(0 0 0 / 30%) 0px 1px;
